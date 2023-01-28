@@ -45,54 +45,127 @@
 
         <!--container-->
         <div class="project-container">
+            
             <!--box-1-->
-            <a href="images/proj-1.jpg" class="project-box computer-vision" data-lightbox="work">
-                <img sec="images/proj-1.jpg" alt="work">
+            <a href="#sfm" class="project-box computer-vision html5lightbox" >
+                <img src="images/proj1/shoe.gif" alt="">
             </a>
 
             <!--box-2-->
-            <a href="" class="project-box computer-vision">
-                <img sec="images/proj-2.jpg" alt="work">
+            <a href="#3d-reconstruction" class="project-box computer-vision html5lightbox ">
+                <img src="images/proj2/train.png" alt="">
             </a>
 
             <!--box-3-->
-            <a href="" class="project-box computer-vision">
-                <img sec="images/proj-3.jpg" alt="work">
+            <a href="#single-view-recon" class="project-box computer-vision html5lightbox">
+                <img src="images/proj3/homepod.gif" alt="">
             </a>
 
             <!--box-4-->
-            <a href="" class="project-box computer-vision">
-                <img sec="images/proj-4.jpg" alt="work">
+            <a href="#affine" class="project-box computer-vision html5lightbox">
+                <img src="images/proj4/metric1.png" alt="">
             </a>
 
             <!--box-5-->
             <a href="" class="project-box deep-learning">
-                <img sec="images/proj-5.jpg" alt="work">
+                <img src="images/proj-5.jpg" alt="">
             </a>
 
             <!--box-6-->
             <a href="" class="project-box deep-learning">
-                <img sec="images/proj-6.jpg" alt="work">
+                <img src="images/proj-6.jpg" alt="">
             </a>
 
             <!--box-7-->
             <a href="" class="project-box deep-learning">
-                <img sec="images/proj-7.jpg" alt="work">
+                <img src="images/proj-7.jpg" alt="">
             </a>
 
             <!--box-8-->
             <a href="" class="project-box robotics">
-                <img sec="images/proj-8.jpg" alt="work">
+                <img src="images/proj-8.jpg" alt="">
             </a>
 
             <!--box-9-->
             <a href="" class="project-box robotics">
-                <img sec="images/proj-9.jpg" alt="work">
+                <img src="images/proj-9.jpg" alt="">
             </a>
 
 
 
         </div>
+        <!--Project Descriptions and details-->
+        <!--proj1 SFM -->>
+        <div id="sfm" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Structure from Motion</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have implemented algorithms for doing structure from motion. The project begins with reconstruction from triangulation using 2 input images(two view reconstruction) and then goes onto explore incremental sfm(a technique used by most modern SfM pipelines) and finally I explored COLMAP (an off the shelf application to do SfM)</p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj4/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
+                <img src="images/proj1/city.gif">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+        <!--proj2 3D Reconstruction -->>
+        <div id="3d-reconstruction" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Epipolar Geometry and 3D reconstruction</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have implemented epipolar geometry constraints and understood its importance in generating 3D structure from 2D images. I have also implemented bundle adjustment which is used in SfM pipelines to obtain accurate camera poses</p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj3/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
+                <img src="images/proj2/cow.png">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+        <!--proj3 single view Reconstruction -->>
+        <div id="single-view-recon" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Single View Reconstruction</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I used concepts like vanishing points and perspective n-point to reconstruct 3D of a scene given a single view. Unlike SfM from triangulation which requires multiple views, this project aims to use the geometry behind planes and reconstruct 3D.</p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj2/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
+                <img src="images/proj3/house.gif">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+        <!--proj4 Affine rectification -->>
+        <div id="affine" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Rectification</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I used the geometric principles from perspective projection and implemented different types of image rectification(affine and metric). Implementation of image rectification improved my understanding of lines and points at infinity, vanishing points. </p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj1/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
+                <img src="images/proj4/affine1.png">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
     </section>
     <!-- <header class="header">
         <div class="wrap d-flex">
@@ -155,7 +228,6 @@
             });
         });
     </script>
-    <script type="text/javascript" src="lightbox.min.js"></script>
     <script type="text/javascript" src="html5lightbox/html5lightbox.js"></script>
 </body>
 
