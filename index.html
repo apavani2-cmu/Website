@@ -47,8 +47,9 @@
         <div class="project-container">
             
             <!--box-1-->
-            <a href="#sfm" class="project-box computer-vision html5lightbox" >
+            <a href="#sfm" class="project-box computer-vision html5lightbox text" >
                 <img src="images/proj1/shoe.gif" alt="">
+                <div class="text middle">Structure from Motion</div> 
             </a>
 
             <!--box-2-->
@@ -65,28 +66,38 @@
             <a href="#affine" class="project-box computer-vision html5lightbox">
                 <img src="images/proj4/metric1.png" alt="">
             </a>
+            
+            <!--box-4A-->
+            <a href="#sfm-panorama" class="project-box computer-vision html5lightbox">
+                <img src="images/proj4A/abhishek.gif" alt="">
+            </a>
 
             <!--box-5-->
-            <a href="" class="project-box deep-learning">
-                <img src="images/proj-5.jpg" alt="">
+            <a href="#2d-homography" class="project-box computer-vision html5lightbox">
+                <img src="images/proj5/kfp.gif" alt="">
             </a>
 
             <!--box-6-->
-            <a href="" class="project-box deep-learning">
-                <img src="images/proj-6.jpg" alt="">
+            <a href="#physics-based-vision" class="project-box computer-vision html5lightbox">
+                <img src="images/proj6/face2.png" alt="">
             </a>
-
+            
             <!--box-7-->
-            <a href="" class="project-box deep-learning">
-                <img src="images/proj-7.jpg" alt="">
+            <a href="#pytorch3d" class="project-box deep-learning html5lightbox">
+                <img src="images/proj7/colored_cow.gif" alt="">
             </a>
 
             <!--box-8-->
+            <a href="#alignrgb" class="project-box computer-vision html5lightbox">
+                <img src="images/proj8/emir.png" alt="">
+            </a>
+
+            <!--box-9-->
             <a href="" class="project-box robotics">
                 <img src="images/proj-8.jpg" alt="">
             </a>
 
-            <!--box-9-->
+            <!--box-10-->
             <a href="" class="project-box robotics">
                 <img src="images/proj-9.jpg" alt="">
             </a>
@@ -108,7 +119,7 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <img src="images/proj1/city.gif">
+                <img src="images/proj1/shoe.gif" width="75%" height="75%">
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -126,7 +137,7 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <img src="images/proj2/cow.png">
+                <img src="images/proj2/train.png" width="75%" height="75%">
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -144,7 +155,7 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <img src="images/proj3/house.gif">
+                <img src="images/proj3/homepod.gif" width="75%" height="75%">
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -162,10 +173,91 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <img src="images/proj4/affine1.png">
+                <img src="images/proj4/metric1.png" width="75%" height="75%">
               </div>
               <div style="clear:both;"></div>
           </div></div>
+
+        <!--proj4A SfM from panorama style videos-->>
+        <div id="sfm-panorama" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Recovering Pose from Panorama style videos</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">This is a course project done in the course 16-822: Geometry Based Methods in Vision. It is difficult to recover camera pose and structure of a scene from a video that has rotation dominant motion. In this project I have explored concepts like spherical epipolar geometry, feature tracking using Lucas Kanade Optical flow pyramids, GRIC score computation(geometric robust information criterion) and rotation averaging. We wrote a detailed paper which outlines our approach and hyperparameters we used. We empirically validate our approach using real world data and have made our repository public  </p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://drive.google.com/file/d/13yFVjomOHOE6Vrsm38jKHJsb9VZPIhiF/view?usp=share_link">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <img src="images/proj4A/camera.png" width="75%" height="75%">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+        <!--proj5 2D homography-->>
+        <div id="2d-homography" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Planar Homography</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I implemented 2D planar homography. Given enough annotations, we can transform any source plane to fit the target(destination) plane. I generated a simple augmented reality output by overlaying a movie on top of a book.  </p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found in the homography section of <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj1/">this</a> page</p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <img src="images/proj5/kfp.gif" width="75%" height="75%">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+        <!--proj6 Physics Based Vision-->>
+        <div id="physics-based-vision" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Physics Based Vision</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I reconstructed 3D surface, given a source image and multiple lighting conditions using physics based methods. I implemented the n dot l lighting model and understood concepts like albedo and surface normals </p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <img src="images/proj6/face2.png" width="75%" height="75%">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+          <!--proj7 Pytorch3d-->>
+        <div id="pytorch3d" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Pytorch 3D</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I worked on the basics of using the pytorch3D API. I worked on rendering point clouds, implicit, parametric surfaces. I also implement sampling point clouds from meshes. More details on the project can be found <a href="https://www.andrew.cmu.edu/course/16-825/projects/apavani2/proj1/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <img src="images/proj7/colored_cow.gif" width="75%" height="75%">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+          <!--proj8 Image Registration-->>
+        <div id="alignrgb" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <img src="images/proj8/emir.png" width="75%" height="75%">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
+
     </section>
     <!-- <header class="header">
         <div class="wrap d-flex">
