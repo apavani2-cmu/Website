@@ -40,6 +40,7 @@
             <li class="list project-filter-active" data-filter="all">All</li>
             <li class="list" data-filter="computer-vision">Computer Vision</li>
             <li class="list" data-filter="deep-learning">Deep Learning</li>
+            <li class="list" data-filter="generative">Generative Models</li>
             <li class="list" data-filter="robotics">Robotics</li>
         </ul>
 
@@ -108,15 +109,96 @@
             </a>
 
             <!--box-9-->
-            <a href="" class="project-box robotics">
-                <img src="images/proj-8.jpg" alt="">
-            </a>
+            <a href="#defectidentification" class="project-box deep-learning html5lightbox">
+                <img src="images/proj9/winddefect.png" alt="">
+                <div class="text middle">Defect Identification in Wind Turbines</div> 
 
+            </a>
+            
             <!--box-10-->
-            <a href="" class="project-box robotics">
-                <img src="images/proj-9.jpg" alt="">
+            <a href="#semnaticsegmentation" class="project-box deep-learning html5lightbox">
+              <img src="images/proj-10.jpg" alt="">
+              <div class="text middle">Semantic segmentation of high resolution aerial imagery </div> 
+
+          </a>
+
+            <!--box-11-->
+            <a href="#robotcooking" class="project-box robotics html5lightbox">
+                <img src="images/proj11/robotcook.gif" alt="">
+                <div class="text middle">Understanding and dispensing ingredients for smart robotic cooking</div> 
+
             </a>
 
+            <!--box-12-->
+            <a href="#legokitting" class="project-box robotics html5lightbox">
+              <img src="images/proj12/legokit.png" alt="">
+              <div class="text middle">Lego Kitting</div> 
+
+            </a>
+
+            <!--box-13-->
+            <a href="#fixedwing" class="project-box robotics html5lightbox">
+              <img src="images/proj-13.jpg" alt="">
+              <div class="text middle">Design of Fixed wing UAV for package delivery</div> 
+
+            </a>
+
+            <!--box-14-->
+            <a href="#evtol" class="project-box robotics html5lightbox">
+              <img src="images/proj-14.jpg" alt="">
+              <div class="text middle">Design of e-VTOL UAV with enhanced flight times</div> 
+
+            </a>
+
+            <!--box-15-->
+            <a href="#singleviewNN" class="project-box deep-learning html5lightbox">
+              <img src="images/proj-15.jpg" alt="">
+              <div class="text middle">Single View 3D reconstruction using neural networks</div> 
+
+            </a>
+
+            <!--box-16-->
+            <a href="#hri" class="project-box robotics html5lightbox">
+              <img src="images/proj-16.jpg" alt="">
+              <div class="text middle">A study on empathy towards robots and its relation to
+                anthropomorphism and robot familiarity</div> 
+
+            </a>
+
+            <!--box-17-->
+            <a href="#kitti" class="project-box robotics deep-learning computer-vision html5lightbox">
+              <img src="images/proj-16.jpg" alt="">
+              <div class="text middle">Visual Odometry on Kitti Dataset</div> 
+
+            </a>
+            
+            <!--box-18-->
+            <a href="#apple" class="project-box deep-learning generative html5lightbox">
+              <img src="images/proj-16.jpg" alt="">
+              <div class="text middle">Real Time Controllable Motion Transition for Characters</div> 
+
+            </a>
+
+            <!--box-19-->
+            <a href="#gans" class="project-box deep-learning generative html5lightbox">
+              <img src="images/proj-19.jpg" alt="">
+              <div class="text middle">Generative Adversarial Networks</div> 
+
+            </a>
+
+            <!--box-20-->
+            <a href="#vqa" class="project-box deep-learning html5lightbox">
+              <img src="images/proj-20.jpg" alt="">
+              <div class="text middle">Visual Question Answering</div> 
+
+            </a>
+
+            <!--box-21-->
+            <a href="#midas" class="project-box deep-learning html5lightbox">
+              <img src="images/proj-20.jpg" alt="">
+              <div class="text middle">Depth Map Prediction using transformer architecture</div> 
+
+            </a>
 
 
         </div>
@@ -129,7 +211,7 @@
                   <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Structure from Motion</p>
                   <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have implemented algorithms for doing structure from motion. The project begins with reconstruction from triangulation using 2 input images(two view reconstruction) and then goes onto explore incremental sfm(a technique used by most modern SfM pipelines) and finally I explored COLMAP (an off the shelf application to do SfM)</p>
                   
-                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj4/">here</a></p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found  <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj4/" style="font-size: 20px; border-bottom: 2px solid black">here</a></p>
                 </div>
               </div>
               <div class="lightboxright">
@@ -272,8 +354,225 @@
               <div style="clear:both;"></div>
           </div></div>
 
+          <!--proj9 Defect Identification-->
+        <div id="defectidentification" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Defect Identification using Deep Networks</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">I worked on this project during my time in  I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <figure>
+              <img src="images/proj9/winddefect.png" width="75%" height="75%">
+              <figcaption>Source: Pigeon Innovative Solutions LLP</figcaption>
+              </figure>
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj10 Semantic Segmentation-->
+        <div id="semanticsegmentation" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj11 Robot cooking-->
+        <div id="robotcooking" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Understanding and dispensing ingredients for smart robotic cooking</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, we have developed an end-end robotic system capable of making food recipes from scratch from a single click. The system is capable of identifying and validating ingredients kept in container, dispense a wide variety of ingredients including solids, liquids and powders.</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">More details about the project can be found <a href="https://mrsdprojects.ri.cmu.edu/2022teamb/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj11/robotcook.gif" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj12 Lego Kitting-->
+        <div id="legokitting" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Lego Kitting</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, we worked on developing a robot that could sort different types of lego blocks based on color. We used image centroid and image moments to identify the camera blocks and then generated transforms from the camera frame to the robot end-effector frame to control the robot inorder to pick up the block of choice. The robot stops once it has sorted out all the blocks based on color.</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">More details about the project can be found in <a href="https://drive.google.com/file/d/1w5zNU4thTL4BeupuzLITmck0K93oKr9X/view">this</a> report.</p> 
+                <p class="divdescription" style="font-size:14px;line-height:20px;"> A video link to our system in action can be found <a href="https://drive.google.com/file/d/1yqwXNROLpTAur50008b9DTNPVBMDlK0u/view">here</a></p>
+                
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj12/legokit.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj13 Fixed Wing-->
+        <div id="fixedwing" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj14 E-VTOL UAV-->
+        <div id="evtol" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj15 single view NN-->
+        <div id="singleviewNN" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj16 HRI-->
+        <div id="hri" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj17 VO Kitti-->
+        <div id="kitti" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj18 Apple Internship-->
+        <div id="apple" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj19 gans-->
+        <div id="gans" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj20 VQA-->
+        <div id="vqa" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj21 Depth prediction using transformer architecture -->
+        <div id="midas" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
+        <!--proj22 Weakly supervised deep detection networks -->
+        <div id="weaksuper" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Weakly Supervised Deep detection networks</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj8/emir.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
 
     </section>
+
     <!-- <header class="header">
         <div class="wrap d-flex">
             <h1 class="logo">
