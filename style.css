@@ -71,7 +71,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 70%;
     margin: auto;
 
 }
@@ -82,6 +82,9 @@ body{
     padding: 15px;
     border: 1px solid #eeeeee;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .project-box img{
     width: 100%;
@@ -142,26 +145,22 @@ body{
   
   .project-container .middle {
     transition: .5s ease;
-    opacity: 0;
     position: relative;
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
-    /* -ms-transform: translate(-50%, -50%); */
     text-align: center;
+    display: none;
   }
   
-  .project-container:hover .image {
-    opacity: 0.3;
+  .project-box:hover img {
+    /* opacity: 0.3; */
+    display: none;
   }
   
-  .project-container:hover .middle {
-    opacity: 1;
+  .project-box:hover .middle {
+    display: block;
   }
   
   .text {
-    background-color: #04AA6D;
-    color: white;
-    font-size: 16px;
+    color: seagreen;
+    font-size: 24px;
     padding: 16px 32px;
   }
