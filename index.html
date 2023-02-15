@@ -30,9 +30,9 @@
     <!--Project Section-->
     <section id="project">
         <!--heading-->
-        <div class="" project-heading">
-            <h1><span>Abhishek Pavani's Portfolio</span></h1>
-            <h2 align="center">My Projects</h2>
+        <div class="project-heading">
+            <a class="link-style" href="/about.html">Abhishek Pavani</a>
+            <!-- <h2 align="center">My Projects</h2> -->
         </div>
 
         <!--filter-->
@@ -116,8 +116,8 @@
             </a>
             
             <!--box-10-->
-            <a href="#semnaticsegmentation" class="project-box deep-learning html5lightbox">
-              <img src="images/proj-10.jpg" alt="">
+            <a href="#semanticsegmentation" class="project-box deep-learning html5lightbox">
+              <img src="images/proj10/segment.png" alt="">
               <div class="text middle">Semantic segmentation of high resolution aerial imagery </div> 
 
           </a>
@@ -180,25 +180,25 @@
             </a>
 
             <!--box-19-->
-            <a href="#gans" class="project-box deep-learning generative html5lightbox">
+            <!-- <a href="#gans" class="project-box deep-learning generative html5lightbox">
               <img src="images/proj-19.jpg" alt="">
               <div class="text middle">Generative Adversarial Networks</div> 
 
-            </a>
+            </a> -->
 
             <!--box-20-->
-            <a href="#vqa" class="project-box deep-learning html5lightbox">
+            <!-- <a href="#vqa" class="project-box deep-learning html5lightbox">
               <img src="images/proj-20.jpg" alt="">
               <div class="text middle">Visual Question Answering</div> 
 
-            </a>
+            </a> -->
 
             <!--box-21-->
-            <a href="#midas" class="project-box deep-learning html5lightbox">
+            <!-- <a href="#midas" class="project-box deep-learning html5lightbox">
               <img src="images/proj-20.jpg" alt="">
               <div class="text middle">Depth Map Prediction using transformer architecture</div> 
 
-            </a>
+            </a> -->
 
 
         </div>
@@ -211,7 +211,7 @@
                   <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Structure from Motion</p>
                   <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have implemented algorithms for doing structure from motion. The project begins with reconstruction from triangulation using 2 input images(two view reconstruction) and then goes onto explore incremental sfm(a technique used by most modern SfM pipelines) and finally I explored COLMAP (an off the shelf application to do SfM)</p>
                   
-                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found  <a href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj4/" style="font-size: 20px; border-bottom: 2px solid black">here</a></p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found  <a class="link-style" href="https://www.andrew.cmu.edu/course/16-822/projects/apavani2/proj4/">here</a></p>
                 </div>
               </div>
               <div class="lightboxright">
@@ -378,12 +378,14 @@
           <div class="lightboxcontainer">
             <div class="lightboxleft">
               <div class="divtext">
-                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Image Registration</p>
-                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have written algorithms to align the channels of a RGB image. I used similarity metrics like SSD(sum of squared differences), NCC(Normalized Cross Correlation, ZNCC(Zero Normalized Cross Correlation). I tested my algorithms on the Prokudin-Gorskii photo collection. I also tested the algorithm on imagery taken from a hubble telescope. More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj1/">here</a></p>
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Semantic Segmentation in high resolution aerial imagery</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I worked on generating semantic segmentation masks for buildings in high resolution aerial imagery. This is useful for creating maps from captured drone imagery.</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">To create a dataset, I used high resolution 4K aerial imagery with 4cm GSD and created ground truth segmentation masks using a GIS software like QGIS. I then preprocessed these images and fed this into a UNet architecture and treated it as a supervised learning problem.</p>
+                <!-- <p class="divdescription" style="font-size:14px;line-height:20px;"></p> -->
               </div>
             </div>
             <div class="lightboxright">
-              <img src="images/proj8/emir.png" width="75%" height="75%">
+              <img src="images/proj10/segment.png" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
         </div></div>
@@ -508,11 +510,11 @@
               <div class="divtext">
                 <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Real Time Controllable Motion Transition for Characters</p>
                 <p class="divdescription" style="font-size:14px;line-height:20px;">I implemented this paper from scratch during my internship at Apple. The idea is to use a neural network to interpolate between 2 animation keyframes using a generative model. </p>
-                <br></br>
+                
                 <p class="divdescription" style="font-size:14px;line-height:20px;">The input data here are .bvh files, from which we extract the joint position and rotations for each frame. We feed the pose information to the encoder of the conditional-VAE to generate a latent space. We then sample from this latent space and pass it through a decoder which has multiple expert networks. The gating scheme allows for the network to choose the right expert from the decoder.</p>
-                <br></br>
+                
                 <p class="divdescription" style="font-size:14px;line-height:20px;">The VAE network is trained using multiple loss terms like reconstruction loss, KL Divergence, Bone Length Loss, Footskating Loss, L1 Rotation loss. These loss functions constrain the generated pose to some acceptable human pose.</p>
-                <br></br>
+                
                 <p class="divdescription" style="font-size:14px;line-height:20px;">Next we train a transition sampler, which takes in the current frame and the target frame and outputs the next frame in the sequence. The network architecture used for this has been mentioned in the paper. </p>
               </div>
             </div>
@@ -526,7 +528,7 @@
             <div style="clear:both;"></div>
         </div></div>
 
-        <!--proj19 gans-->
+        <!-- proj19 gans
         <div id="gans" style="display:none;">
           <div class="lightboxcontainer">
             <div class="lightboxleft">
@@ -539,10 +541,10 @@
               <img src="images/proj8/emir.png" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
-        </div></div>
+        </div></div> -->
 
         <!--proj20 VQA-->
-        <div id="vqa" style="display:none;">
+        <!-- <div id="vqa" style="display:none;">
           <div class="lightboxcontainer">
             <div class="lightboxleft">
               <div class="divtext">
@@ -554,10 +556,10 @@
               <img src="images/proj8/emir.png" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
-        </div></div>
+        </div></div> -->
 
         <!--proj21 Depth prediction using transformer architecture -->
-        <div id="midas" style="display:none;">
+        <!-- <div id="midas" style="display:none;">
           <div class="lightboxcontainer">
             <div class="lightboxleft">
               <div class="divtext">
@@ -569,10 +571,10 @@
               <img src="images/proj8/emir.png" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
-        </div></div>
+        </div></div> -->
 
         <!--proj22 Weakly supervised deep detection networks -->
-        <div id="weaksuper" style="display:none;">
+        <!-- <div id="weaksuper" style="display:none;">
           <div class="lightboxcontainer">
             <div class="lightboxleft">
               <div class="divtext">
@@ -584,7 +586,7 @@
               <img src="images/proj8/emir.png" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
-        </div></div>
+        </div></div> -->
 
     </section>
 
