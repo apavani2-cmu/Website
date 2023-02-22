@@ -55,7 +55,7 @@
 
             <!--box-2-->
             <a href="#3d-reconstruction" class="project-box computer-vision html5lightbox ">
-                <img src="images/proj2/train.png" alt="">
+                <img src="images/proj2/train.jpeg" alt="">
                 <div class="text middle">Epipolar Geometry</div> 
             </a>
 
@@ -103,7 +103,7 @@
 
             <!--box-8-->
             <a href="#alignrgb" class="project-box computer-vision html5lightbox">
-                <img src="images/proj8/emir.png" alt="">
+                <img src="images/proj8/emir.jpeg" alt="">
                 <div class="text middle">Image Registration</div> 
 
             </a>
@@ -131,7 +131,7 @@
 
             <!--box-12-->
             <a href="#legokitting" class="project-box robotics html5lightbox">
-              <img src="images/proj12/legokit.png" alt="">
+              <img src="images/proj12/legokit.jpeg" alt="">
               <div class="text middle">Lego Kitting</div> 
 
             </a>
@@ -145,7 +145,7 @@
 
             <!--box-14-->
             <a href="#evtol" class="project-box robotics html5lightbox">
-              <img src="images/proj14/evtol.JPG" alt="">
+              <img src="images/proj14/evtol.jpeg" alt="">
               <div class="text middle">Design of e-VTOL UAV with enhanced flight times</div> 
 
             </a>
@@ -200,6 +200,13 @@
 
             </a> -->
 
+            <!--box-22-->
+            <a href="#poisson" class="project-box computer-vision html5lightbox">
+              <img src="images/proj22/poisson.png" alt="">
+              <div class="text middle">Gradient Domain Fusion</div> 
+
+            </a>
+
 
         </div>
         <!--Project Descriptions and details-->
@@ -234,7 +241,7 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <img src="images/proj2/train.png" width="75%" height="75%">
+                <img src="images/proj2/train.jpeg" width="75%" height="75%">
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -349,7 +356,7 @@
                 </div>
               </div>
               <div class="lightboxright">
-                <img src="images/proj8/emir.png" width="75%" height="75%">
+                <img src="images/proj8/emir.jpeg" width="75%" height="75%">
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -419,7 +426,7 @@
               </div>
             </div>
             <div class="lightboxright">
-              <img src="images/proj12/legokit.png" width="75%" height="75%">
+              <img src="images/proj12/legokit.jpeg" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
         </div></div>
@@ -451,7 +458,7 @@
               </div>
             </div>
             <div class="lightboxright">
-              <img src="images/proj14/evtol.JPG" width="75%" height="75%">
+              <img src="images/proj14/evtol.jpeg" width="75%" height="75%">
             </div>
             <div style="clear:both;"></div>
         </div></div>
@@ -573,7 +580,7 @@
             <div style="clear:both;"></div>
         </div></div> -->
 
-        <!--proj22 Weakly supervised deep detection networks -->
+        <!--proj21a Weakly supervised deep detection networks -->
         <!-- <div id="weaksuper" style="display:none;">
           <div class="lightboxcontainer">
             <div class="lightboxleft">
@@ -587,6 +594,26 @@
             </div>
             <div style="clear:both;"></div>
         </div></div> -->
+
+        <!--proj22 Gradient Domain Fusion -->
+        <div id="poisson" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Gradient Domain Fusion</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I explored gradient domain fusion techniques. In particular, I implemented poisson blending, to blend 2 images.
+
+                The goal is to seamlessly blend an object or texture from a source image into a target image, without creating noticeable seams. The approach is to preserve the gradient of the source region while ignoring the overall intensity, using a least squares problem to solve for new intensity values within the source region. The method presented is one example of a more general set of gradient-domain processing techniques, with applications including blending, tone-mapping, and non-photorealistic rendering. The project involves implementing the Poisson blending technique and potentially exploring additional techniques as well.
+
+                The reason why “Poisson Blending” produces a more realistic composition than simply pasting two similarly colored images together is that our visual system is more responsive to changes in contrast rather than variations in intensity.
+                More details about the project can be found <a href="https://www.andrew.cmu.edu/course/16-726-sp23/projects/apavani2/proj2/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <img src="images/proj22/poisson.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
 
     </section>
 
