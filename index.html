@@ -49,7 +49,7 @@
             
             <!--box-1-->
             <a href="#sfm" class="project-box computer-vision html5lightbox" >
-                <video src="images/proj1/shoe.webm" alt="" autoplay loop></video>
+                <video src="images/proj1/shoe.webm" alt="" autoplay loop preload="auto"></video>
                 <div class="text middle">Structure from Motion</div> 
             </a>
 
@@ -59,15 +59,27 @@
               <div class="text middle">Neural Radiance Fields</div> 
           </a>
 
+            <!--box-1b-->
+            <a href="#neus" class="project-box computer-vision deep-learning html5lightbox" >
+              <img src="images/proj1B/neus.png" alt="">
+              <div class="text middle">Neural Surfaces</div> 
+            </a>
+
             <!--box-2-->
             <a href="#3d-reconstruction" class="project-box computer-vision html5lightbox ">
                 <img src="images/proj2/train.jpeg" alt="">
                 <div class="text middle">Epipolar Geometry</div> 
             </a>
 
+            <!--box-2A-->
+            <a href="#cls_seg" class="project-box deep-learing computer-vision html5lightbox ">
+              <img src="images/proj2A/seg.gif" alt="">
+              <div class="text middle">Point Cloud Classifcation and Segmentation</div> 
+            </a>
+
             <!--box-3-->
             <a href="#single-view-recon" class="project-box computer-vision html5lightbox">
-                <video src="images/proj3/homepod.webm" alt="" autoplay loop></video>
+                <video src="images/proj3/homepod.webm" alt="" autoplay loop preload="auto"></video>
                 <div class="text middle">Single View 3D Reconstruction</div> 
 
             </a>
@@ -81,14 +93,14 @@
             
             <!--box-4A-->
             <a href="#sfm-panorama" class="project-box computer-vision html5lightbox">
-                <video src="images/proj4A/abhishek.webm" alt="" autoplay loop></video>
+                <video src="images/proj4A/abhishek.webm" alt="" autoplay loop preload="auto"></video>
                 <div class="text middle">Recover Camera Pose from Rotation Dominant Motion</div> 
 
             </a>
 
             <!--box-5-->
             <a href="#2d-homography" class="project-box computer-vision html5lightbox">
-                <video src="images/proj5/kfp.webm" alt="" loop autoplay></video>
+                <video src="images/proj5/kfp.webm" alt="" loop autoplay preload="auto"></video>
                 <div class="text middle">Planar Homography</div> 
 
             </a>
@@ -102,7 +114,7 @@
             
             <!--box-7-->
             <a href="#pytorch3d" class="project-box deep-learning html5lightbox">
-                <video src="images/proj7/colored_cow.webm"  alt="" autoplay loop ></video>
+                <video src="images/proj7/colored_cow.webm"  alt="" autoplay loop preload="auto"></video>
                 <div class="text middle">3D Learning basics with Pytorch3d</div> 
 
             </a>
@@ -130,7 +142,7 @@
 
             <!--box-11-->
             <a href="#robotcooking" class="project-box robotics html5lightbox">
-                <video src="images/proj11/robotcook.webm" alt="" autoplay loop></video>
+                <video src="images/proj11/robotcook.webm" alt="" autoplay loop preload="auto"></video>
                 <div class="text middle">Understanding and dispensing ingredients for smart robotic cooking</div> 
 
             </a>
@@ -236,7 +248,7 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <iframe src="images/proj1/shoe.webm" width="75%" height="75%"></iframe>
+                <video src="images/proj1/shoe.webm" width="75%" height="75%" autoplay loop preload="auto"></video>
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -259,6 +271,24 @@
               <div style="clear:both;"></div>
           </div></div>
 
+          <!--proj1B NeUS -->
+        <div id="neus" style="display:none;">
+          <div class="lightboxcontainer">
+            <div class="lightboxleft">
+              <div class="divtext">
+                <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Neural Surfaces</p>
+                <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have implemented sphere tracing and MLP to extract neural surfaces. There are two main papers I have approached here 1. VolSDF 2. NeUS. I have also explored neural relighting and have implemented the phong reflection model.</p>
+                
+                <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found  <a class="link-style" href="https://www.andrew.cmu.edu/course/16-825/projects/apavani2/proj4/">here</a></p>
+              </div>
+            </div>
+            <div class="lightboxright">
+              <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
+              <img src="images/proj1B/neus.png" width="75%" height="75%">
+            </div>
+            <div style="clear:both;"></div>
+        </div></div>
+
         <!--proj2 3D Reconstruction -->>
         <div id="3d-reconstruction" style="display:none;">
             <div class="lightboxcontainer">
@@ -277,6 +307,24 @@
               <div style="clear:both;"></div>
           </div></div>
 
+        <!--proj2A Point Cloud Classification and Segmentation -->>
+        <div id="cls_seg" style="display:none;">
+            <div class="lightboxcontainer">
+              <div class="lightboxleft">
+                <div class="divtext">
+                  <p class="divtitle" style="font-size:16px;font-weight:bold;margin:12px 0px;">Point Cloud Classification and Segmentation</p>
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">In this project, I have implemented the pointNet Architecture to classify and segment point clouds. </p>
+                  
+                  <p class="divdescription" style="font-size:14px;line-height:20px;">Details of the project can be found <a href="https://www.andrew.cmu.edu/course/16-825/projects/apavani2/proj5/">here</a></p>
+                </div>
+              </div>
+              <div class="lightboxright">
+                <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
+                <img src="images/proj2A/seg.gif" width="75%" height="75%">
+              </div>
+              <div style="clear:both;"></div>
+          </div></div>
+
         <!--proj3 single view Reconstruction -->>
         <div id="single-view-recon" style="display:none;">
             <div class="lightboxcontainer">
@@ -290,7 +338,7 @@
               </div>
               <div class="lightboxright">
                 <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wswxQ3mhwqQ" frameborder="0" allowfullscreen></iframe> -->
-                <video src="images/proj3/homepod.webm" width="75%" height="75%" autoplay loop></video>
+                <video src="images/proj3/homepod.webm" width="75%" height="75%" autoplay loop preload="auto"></video>
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -342,7 +390,7 @@
                 </div>
               </div>
               <div class="lightboxright">
-                <video src="images/proj5/kfp.webm " width="75%" height="75%" autoplay loop></video>
+                <video src="images/proj5/kfp.webm " width="75%" height="75%" autoplay loop preload="auto"></video>
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -372,7 +420,7 @@
                 </div>
               </div>
               <div class="lightboxright">
-                <video src="images/proj7/colored_cow.webm" width="75%" height="75%" autoplay loop>
+                <video src="images/proj7/colored_cow.webm" width="75%" height="75%" autoplay loop preload="auto"></video>
               </div>
               <div style="clear:both;"></div>
           </div></div>
@@ -439,7 +487,7 @@
               </div>
             </div>
             <div class="lightboxright">
-              <video src="images/proj11/robotcook.webm" width="75%" height="75%" autoplay loop></video>
+              <video src="images/proj11/robotcook.webm" width="75%" height="75%" autoplay loop preload="auto"></video>
             </div>
             <div style="clear:both;"></div>
         </div></div>
